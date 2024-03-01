@@ -1,1 +1,1 @@
-export const SOMEONE ="once told me"
+export const SOMEBODY ="once told me"

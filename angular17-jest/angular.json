@@ -26,11 +26,11 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "<rootDir>/favicon.ico",
+              "<rootDir>/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "<rootDir>/styles.scss"
             ],
             "scripts": []
           },
@@ -77,22 +77,14 @@
           }
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "@angular-devkit/build-angular:jest",
           "options": {
             "polyfills": [
               "zone.js",
               "zone.js/testing"
             ],
-            "tsConfig": "tsconfig.spec.json",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": []
+            "tsConfig": "tsconfig.spec.json"
+            
           }
         }
       }
@@ -171,22 +163,13 @@
           }
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "@angular-devkit/build-angular:jest",
           "options": {
             "polyfills": [
               "zone.js",
               "zone.js/testing"
             ],
-            "tsConfig": "projects/use-jest/tsconfig.spec.json",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              "projects/use-jest/src/favicon.ico",
-              "projects/use-jest/src/assets"
-            ],
-            "styles": [
-              "projects/use-jest/src/styles.scss"
-            ],
-            "scripts": []
+            "tsConfig": "projects/use-jest/tsconfig.spec.json"
           }
         }
       }
@@ -213,7 +196,7 @@
           "defaultConfiguration": "production"
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "@angular-devkit/build-angular:jest",
           "options": {
             "tsConfig": "projects/music-lib/tsconfig.spec.json",
             "polyfills": [

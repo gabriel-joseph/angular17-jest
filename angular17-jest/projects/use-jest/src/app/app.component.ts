@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { SOMEBODY } from 'music-lib';
+// import {SO }
+
 
 @Component({
   selector: 'app-root',
@@ -9,5 +12,6 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'use-jest';
+  
+  title = SOMEBODY;
 }
